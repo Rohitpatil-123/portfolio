@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <div className=" w-full my-4 mx-6 md:my-12 md:w-9/12 flex flex-col md:flex-row gap-4">
+      <div className=" w-full my-4 mx-6 md:my-12 md:w-10/12 flex flex-col md:flex-row gap-4">
         <div className="w-full  md:w-3/12 bg-[#1E1E1F]  border-2 rounded-3xl border-[#383838] relative">
           <div className="my-2 mx-4  flex md:gap-2 gap-4 md:flex-col md:justify-center md:items-center">
             <div className="bg-[#383839] w-20 h-20 md:w-36 md:h-36 rounded-3xl overflow-hidden my-auto md:mt-10">
@@ -110,8 +110,64 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full md:w-9/12 bg-[#1E1E1F]  border-2 rounded-3xl border-[#383838]">
-          cndj
+        <div className="w-full md:w-9/12 bg-[#1E1E1F] md:relative  overflow-hidden  border-2 rounded-3xl border-[#383838]">
+          <div className="md:flex hidden md:gap-8  md:absolute md:right-0 md:bg-[#2B2B2C]  py-5 md:px-6 md:rounded-bl-3xl md:border-l-2 border-[#383838]">
+            <div className="text-[#D6D6D6]  tracking-wide  font-[600] cursor-pointer ">
+              About
+            </div>
+            <div className="text-[#D6D6D6]  tracking-wide font-[600] cursor-pointer ">
+              Experience
+            </div>
+            <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+              projects
+            </div>
+            <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+              Skills
+            </div>
+            <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+              Contact Me
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center md:px-8 md:py-12 px-4 py-4">
+            <div className="text-[#D6D6D6] text-2xl font-bold tracking-wide">
+              About Me
+            </div>
+            <div className="text-[#D6D6D6] text-sm font-medium tracking-wide mt-2">
+              I am a full stack developer with 1 year of experience in
+              developing web applications using MERN stack. I am passionate
+              about building scalable and responsive web applications.
+            </div>
+            <div className="text-[#D6D6D6] text-sm font-medium tracking-wide mt-2">
+              I am a quick learner and always eager to learn new technologies.
+            </div>
+            <div className="text-[#D6D6D6] text-sm font-medium tracking-wide mt-2">
+              I am currently looking for a full time opportunity as a full stack
+              developer. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center gap-2 md:gap-8 fixed bottom-0 md:hidden md:bg-[#2B2B2C] bg-gradient-to-r from-yellow-600  to-[#2B2B2C] left-0 w-full bg py-5 md:px-6 ">
+        <div className="text-[#D6D6D6]  tracking-wide  font-[600] cursor-pointer ">
+          About
+        </div>
+        <div className="text-[#D6D6D6]  tracking-wide font-[600] cursor-pointer ">
+          Experience
+        </div>
+        <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+          projects
+        </div>
+        <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+          Skills
+        </div>
+        <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+          Contact Me
         </div>
       </div>
     </div>
