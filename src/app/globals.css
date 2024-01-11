@@ -4,4 +4,10 @@
 
 body{
   background-color: #121212;
+  font-family: poppins;
+}
+
+::selection {
+  background-color: #FDC764 ; /* Change this to the desired background color */
+  color: #140b0b; /* Change this to the desired text color */
 }

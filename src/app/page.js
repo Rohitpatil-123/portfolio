@@ -9,14 +9,20 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import Rohit from "../media/rohit.png";
 import { useState } from "react";
+import About from "../components/about";
+import Experience from "../components/experience";
+import Projects from "../components/projects";
+import Skills from "../components/skill";
+import Contact from "../components/contact";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [show, setShow] = useState(false);
-
+  const [comp, setComp] = useState("");
   return (
     <div className="w-full flex justify-center items-center">
-      <div className=" w-full my-4 mx-6 md:my-12 md:w-10/12 flex flex-col md:flex-row gap-4">
-        <div className="w-full  md:w-3/12 bg-[#1E1E1F]  border-2 rounded-3xl border-[#383838] relative">
+      <div className=" w-full my-4 mx-6 md:my-12 md:w-9/12 flex flex-col md:flex-row gap-4">
+        <div className="w-full  md:w-3/12 bg-[#1E1E1F]  border-[1px] rounded-3xl border-[#383838] relative overflow-hidden">
           <div className="my-2 mx-4  flex md:gap-2 gap-4 md:flex-col md:justify-center md:items-center">
             <div className="bg-[#383839] w-20 h-20 md:w-36 md:h-36 rounded-3xl overflow-hidden my-auto md:mt-10">
               <Image src={Rohit} alt="Rohit" />
@@ -101,7 +107,7 @@ export default function Home() {
               <FaLinkedinIn className="inline-block text-2xl text-[#9F9F9F]" />
             </div>
           </div>
-          <div className="absolute -top-0.5 right-0.5 md:invisible bg-[#2B2B2C] text-[#FFFFFF] p-2 -z-2 mb-4 mt-1  rounded-3xl text-center overflow-hidden  text-sm ">
+          <div className="absolute top-0 right-0 md:invisible bg-[#2B2B2C] text-[#FFFFFF] px-3   rounded-bl-2xl text-center text-sm ">
             <FaAngleDown
               className="inline-block text-md text-[#FEC664]"
               onClick={() => {
@@ -110,63 +116,112 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full md:w-9/12 bg-[#1E1E1F] md:relative  overflow-hidden  border-2 rounded-3xl border-[#383838]">
-          <div className="md:flex hidden md:gap-8  md:absolute md:right-0 md:bg-[#2B2B2C]  py-5 md:px-6 md:rounded-bl-3xl md:border-l-2 border-[#383838]">
-            <div className="text-[#D6D6D6]  tracking-wide  font-[600] cursor-pointer ">
+        <div className="w-full md:w-9/12 bg-[#1E1E1F] md:relative  overflow-hidden  border-[1px] rounded-3xl border-[#383838]">
+          <div className="md:flex hidden md:gap-8  md:absolute md:right-0 md:bg-[#2B2B2C]  py-5 md:px-6 md:rounded-bl-3xl md:border-l-2 border-[#383838] ">
+            <div
+              className="text-[#D6D6D6] tracking-wide font-[600] cursor-pointer"
+              onClick={() => {
+                setComp("about");
+              }}
+            >
               About
             </div>
-            <div className="text-[#D6D6D6]  tracking-wide font-[600] cursor-pointer ">
+            <div
+              className="text-[#D6D6D6]  tracking-wide font-[600] cursor-pointer"
+              onClick={() => {
+                setComp("experience");
+              }}
+            >
               Experience
             </div>
-            <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+            <div
+              className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer"
+              onClick={() => {
+                setComp("projects");
+              }}
+            >
               projects
             </div>
-            <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+            <div
+              className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer"
+              onClick={() => {
+                setComp("skills");
+              }}
+            >
               Skills
             </div>
-            <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+            <div
+              className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer"
+              onClick={() => setComp("contact")}
+            >
               Contact Me
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center md:px-8 md:py-12 px-4 py-4">
-            <div className="text-[#D6D6D6] text-2xl font-bold tracking-wide">
-              About Me
-            </div>
-            <div className="text-[#D6D6D6] text-sm font-medium tracking-wide mt-2">
-              I am a full stack developer with 1 year of experience in
-              developing web applications using MERN stack. I am passionate
-              about building scalable and responsive web applications.
-            </div>
-            <div className="text-[#D6D6D6] text-sm font-medium tracking-wide mt-2">
-              I am a quick learner and always eager to learn new technologies.
-            </div>
-            <div className="text-[#D6D6D6] text-sm font-medium tracking-wide mt-2">
-              I am currently looking for a full time opportunity as a full stack
-              developer. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum
-            </div>
+          <div className="p-4">
+            {(() => {
+              switch (comp) {
+                case "about":
+                  return <About />;
+                  break;
+                case "experience":
+                  return <Experience />;
+                  break;
+                case "projects":
+                  return <Projects />;
+                  break;
+                case "skills":
+                  return <Skills />;
+                  break;
+                case "contact":
+                  return <Contact />;
+                  break;
+                default:
+                  return <About />;
+                  break;
+              }
+            })()}
           </div>
         </div>
       </div>
-      <div className="flex justify-center gap-2 md:gap-8 fixed bottom-0 md:hidden md:bg-[#2B2B2C] bg-gradient-to-r from-yellow-600  to-[#2B2B2C] left-0 w-full bg py-5 md:px-6 ">
-        <div className="text-[#D6D6D6]  tracking-wide  font-[600] cursor-pointer ">
+      <div className="flex justify-center gap-2 md:gap-8 fixed bottom-0 md:hidden md:bg-[#2B2B2C] bg-[#2B2B2C] bg-opacity-10 backdrop-blur-md backdrop-filter left-0 w-full bg py-5 md:px-6 ">
+        <div
+          className="text-[#D6D6D6]  tracking-wide  font-[600] cursor-pointer "
+          onClick={() => {
+            setComp("about");
+          }}
+        >
           About
         </div>
-        <div className="text-[#D6D6D6]  tracking-wide font-[600] cursor-pointer ">
+        <div
+          className="text-[#D6D6D6]  tracking-tight font-[600] cursor-pointer "
+          onClick={() => {
+            setComp("experience");
+          }}
+        >
           Experience
         </div>
-        <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+        <div
+          className="text-[#D6D6D6] tracking-tight  font-[600] cursor-pointer "
+          onClick={() => {
+            setComp("projects");
+          }}
+        >
           projects
         </div>
-        <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+        <div
+          className="text-[#D6D6D6] tracking-tight  font-[600] cursor-pointer "
+          onClick={() => {
+            setComp("skills");
+          }}
+        >
           Skills
         </div>
-        <div className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer ">
+        <div
+          className="text-[#D6D6D6] tracking-tight  font-[600] cursor-pointer "
+          onClick={() => {
+            setComp("contact");
+          }}
+        >
           Contact Me
         </div>
       </div>
