@@ -12,10 +12,20 @@ const about = () => {
       transition={{ duration: 0.9 }}
       className=""
     >
-      <div className="text-3xl font-[700] tracking-wide md:pt-4 text-[#F8F8F8] px-2">
+      <motion.div
+        className="text-3xl font-[700] tracking-wide md:pt-4 text-[#F8F8F8] px-2"
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9 }}
+      >
         About Me
-      </div>
-      <div className="ml-2 md:mt-4 mt-2 rounded-md p-1  bg-[#FDC764] w-10"></div>
+      </motion.div>
+      <motion.div
+        className="ml-2 md:mt-4 mt-2 rounded-md md:p-1 p-0.5 bg-[#FDC764] "
+        initial={{ opacity: 0, width: 0 }}
+        animate={{ opacity: 1, width: 50 }}
+        transition={{ duration: 0.9 }}
+      ></motion.div>
       <div className="text-[#D6D6D6] tracking-wide text-md md:mt-8 mt-4 px-2">
         Hey there! I'm Rohit Sanjay Patil Pursuing a Bachelor's degree in
         Information Technology, I'm driven by a curiosity to explore the

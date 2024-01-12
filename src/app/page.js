@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="w-full flex justify-center items-center">
       <div className=" w-full my-4 mx-6 md:my-12 md:w-9/12 flex flex-col md:flex-row gap-4">
-        <div className="w-full  md:w-3/12 bg-[#1E1E1F]  border-[1px] rounded-3xl border-[#383838] relative overflow-hidden">
+        <div className="w-full h-fit md:w-[18%] bg-[#1E1E1F]  border-[1px] rounded-3xl border-[#383838] relative md:fixed overflow-hidden">
           <div className="my-2 mx-4  flex md:gap-2 gap-4 md:flex-col md:justify-center md:items-center">
             <div className="bg-[#383839] w-20 h-20 md:w-36 md:h-36 rounded-3xl overflow-hidden my-auto md:mt-10">
               <Image src={Rohit} alt="Rohit" />
@@ -88,7 +88,7 @@ export default function Home() {
           <div
             className={`${
               show ? "visible" : "hidden"
-            } md:block  ease-in duration-300 flex justify-center items-center mx-6 mt-4 gap-6`}
+            } md:flex ease-in duration-300 flex justify-center items-center mx-6 mt-4 gap-6`}
           >
             <div className="bg-[#2B2B2C] text-[#FFFFFF] md:p-2 p-1 mb-4 mt-1 cursor-pointer rounded-full text-center overflow-hidden  text-sm ">
               <a href="https://github.com/Rohitpatil-123">
@@ -116,7 +116,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full md:w-9/12 bg-[#1E1E1F] md:relative  overflow-hidden  border-[1px] rounded-3xl border-[#383838]">
+        <div className="w-full md:w-9/12 bg-[#1E1E1F] md:relative  overflow-hidden  border-[1px] rounded-3xl border-[#383838] md:ml-[26%] md:right-0">
           <div className="md:flex hidden md:gap-8  md:absolute md:right-0 md:bg-[#2B2B2C]  py-5 md:px-6 md:rounded-bl-3xl md:border-l-2 border-[#383838] ">
             <div
               className="text-[#D6D6D6] tracking-wide font-[600] cursor-pointer"
