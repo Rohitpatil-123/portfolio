@@ -201,7 +201,7 @@ const projects = () => {
             className="fixed inset-0 bg-black opacity-80"
             onClick={closeModal}
           ></div>
-          <div className="bg-[#1E1E1F] relative border-2 border-[#383838] w-[45%] px-10 py-6 rounded-3xl z-10">
+          <div className="bg-[#1E1E1F] relative border-2 border-[#383838] md:w-[45%] w-[90%] px-10 py-6 rounded-3xl z-10">
             <button
               className="absolute top-0 right-0 mt-4 mr-4 text-2xl text-[#D6D6D6] "
               onClick={closeModal}
@@ -215,18 +215,18 @@ const projects = () => {
               <div className="text-[#D6D6D6] text-sm mt-2 leading-6">
                 {modalData.description}
               </div>
-              <div className="flex gap-4 mt-2">
-                <div className="text-[#D6D6D6] text-sm mb-2 p-2 w-fit rounded-lg bg-[#d6d6d627]">
+              <div className="flex md:gap-4 gap-2 mt-2">
+                <div className="text-[#D6D6D6] text-sm mb-2 md:p-2 p-1 w-fit rounded-lg bg-[#d6d6d627]">
                   <a
                     href={modalData.link}
                     target="_blank"
                     rel="noopener noreferrerk"
-                    className="flex gap-2"
+                    className="flex md:gap-2 gap-1 my-auto"
                   >
                     <MdLiveTv className="text-lg" /> Live demo
                   </a>
                 </div>
-                <div className="text-[#D6D6D6] text-sm mb-2 p-2 w-fit rounded-lg bg-[#d6d6d627]">
+                <div className="text-[#D6D6D6] text-sm mb-2 md:p-2 p-1 w-fit rounded-lg bg-[#d6d6d627]">
                   <a
                     href={modalData.codelink}
                     target="_blank"
@@ -242,7 +242,7 @@ const projects = () => {
               <div className="text-2xl my-3 text-[#D6D6D6]">
                 Technologies Used
               </div>
-              <div className="text-[#D6D6D6] text-sm mt-2 ">
+              <div className="flex flex-wrap gap-3 text-[#D6D6D6] text-sm mt-2 ">
                 {modalData.tech.map((index) => (
                   <span className="mr-2 bg-[#FDC764] text-black px-2 py-1 rounded-sm">
                     {index}
