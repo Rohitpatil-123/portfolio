@@ -28,7 +28,7 @@ export default function Home() {
               <Image src={Rohit} alt="Rohit" />
             </div>
             <div className="flex flex-col justify-center md:items-center ">
-              <div className="md:text-2xl text-xl tracking-wide md:mt-4 text-[#FAFAFA] font-bold">
+              <div className="md:text-2xl text-xl tracking-wide md:mt-4 mt-3 text-[#FAFAFA] font-bold">
                 Rohit Sanjay Patil
               </div>
               <div className="bg-[#2B2B2C] text-[#9F9F9F]  md:p-2 p-1  rounded-lg text-center overflow-hidden md:mt-4 text-sm md:mb-4 mt-2">
@@ -134,7 +134,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="absolute top-0 right-0 md:invisible bg-[#2B2B2C] text-[#FFFFFF] px-3   rounded-bl-2xl text-center text-sm ">
+          <div className="absolute top-0 right-0 md:invisible bg-[#2B2B2C] text-[#FFFFFF] px-3   rounded-bl-2xl text-center text-md ">
             <FaAngleDown
               className="inline-block text-md text-[#FEC664]"
               onClick={() => {
@@ -220,7 +220,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center gap-2 md:gap-8 fixed bottom-0 md:hidden md:bg-[#2B2B2C] bg-[#2B2B2C] bg-opacity-10 backdrop-blur-md backdrop-filter left-0 w-full bg py-5 md:px-6 ">
+      <div className="flex justify-center gap-3 rounded-tl-2xl rounded-tr-2xl md:gap-8 fixed bottom-0 md:hidden  bg-[#2B2B2C] text-sm left-0 w-full bg py-5 md:px-6 ">
         <div
           className="text-[#D6D6D6]  tracking-wide  font-[600] cursor-pointer "
           onClick={() => {
