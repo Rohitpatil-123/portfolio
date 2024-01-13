@@ -77,7 +77,7 @@ const experience = () => {
               <h3 class="mb-1 text-md font-semibold text-gray-900 dark:text-white">
                 {item.company}
               </h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-[#FDC764]">
+              <time class="block mb-2 text-sm font-normal  text-[#FDC764]">
                 {item.role} &nbsp; &nbsp;({item.duration})
               </time>
 

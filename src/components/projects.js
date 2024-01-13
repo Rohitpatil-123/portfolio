@@ -1,11 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Rp from "../media/laqshya.jpeg";
 import Image from "next/image";
 import { GrView } from "react-icons/gr";
 import { useState } from "react";
 import { MdLiveTv } from "react-icons/md";
 import { FaCode } from "react-icons/fa6";
+import Ecom from "../media/ecom.png";
+import Youtub from "../media/youtube.png";
+import News from "../media/news.png";
+import Resume from "../media/resum.png";
+import Voi from "../media/voice.jpg";
+import Vcare from "../media/vcare.png";
+import Chat from "../media/chat.png";
 
 const projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +34,7 @@ const projects = () => {
     {
       id: 1,
       title: "TechCart",
+      imagen: Ecom,
       description:
         "Developed E-commerce platform integrated secure payment through Razorpay for seamless online transactions.Created a user-friendly e-commerce application with Admin Panel, while enhancing functionality through Express,Node.js.Integrated user authentication via JWT(Json Web Token). ",
       link: "https://rcom.onrender.com/",
@@ -36,7 +43,19 @@ const projects = () => {
     },
     {
       id: 2,
+      title: "VCare",
+      imagen: Vcare,
+      description:
+        "Electronic Health Record System , Build using MERN Stack, used JWT for Authentication and Firebase Storage for File Uploading. Doctors and Patients can register, patients can store their medical records, doctors can view patients medical history",
+      link: "https://vcare.onrender.com/",
+      codelink:
+        "https://github.com/Error404-5-0/Electronic-health-record-frontend",
+      tech: ["React", "Node", "MongoDB", "Express", "JWT", "Firebase"],
+    },
+    {
+      id: 3,
       title: "chat-app",
+      imagen: Chat,
       description:
         "Realtime chat application using socket.io and React. used react hooks and Redux for state management. used jwt for authentication.",
       link: "",
@@ -52,17 +71,20 @@ const projects = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "MediaVue",
+      imagen: Youtub,
       description:
         "Built a responsive YouTube clone using React and Material-UI, featuring dynamic content from RapidAPI integration.Developed user-friendly interface for video streaming, showcasing UI/UX design skills.Leveraged React and Material-UI to create an engaging YouTube clone with real-time content",
       link: "https://youtube-clone-sable-eight.vercel.app/",
       codelink: "https://github.com/Rohitpatil-123/Youtube_clone",
       tech: ["React", "Node", "MongoDB", "Express", "Rapid Api"],
     },
+
     {
-      id: 4,
+      id: 5,
       title: "News Mania",
+      imagen: News,
       description:
         "Built a responsive News app using React and Material-UI, featuring dynamic content from NewsApi integration.Developed user-friendly interface for news, showcasing UI/UX design skills.Leveraged React and Material-UI to create an engaging News app with real-time content",
       link: "https://newsmenia.netlify.app/",
@@ -70,8 +92,9 @@ const projects = () => {
       tech: ["React", "Material-UI", "NewsApi"],
     },
     {
-      id: 5,
+      id: 6,
       title: "Resume.io",
+      imagen: Resume,
       description:
         "Built a responsive Resume builder using React and Material-UI, featuring dynamic content from ResumeApi integration.Developed user-friendly interface for Resume, showcasing UI/UX design skills.Leveraged React and Material-UI to create an engaging Resume builder with real-time content",
       link: "https://resume-builer.netlify.app",
@@ -79,8 +102,9 @@ const projects = () => {
       tech: ["React", "Material-UI", "ResumeApi"],
     },
     {
-      id: 6,
+      id: 7,
       title: "Voice Assistant",
+      imagen: Voi,
       description:
         "Built a responsive Voice Assistant using java swing and FreeTTS, featuring dynamic content from FreeTTS integration.Developed user-friendly interface for Voice Assistant, showcasing UI/UX design skills.Leveraged java swing and FreeTTS to create an engaging Voice Assistant with real-time content",
       link: "",
@@ -138,7 +162,7 @@ const projects = () => {
           >
             <motion.li className="group h-[180px] bg-[#383839] cursor-pointer  transition-all duration-75 ease-in rounded-3xl  overflow-hidden my-auto relative">
               <Image
-                src={Rp}
+                src={index.imagen}
                 alt="Rohit"
                 className="w-full h-[100%] object-cover rounded-2xl group "
               />
@@ -154,6 +178,7 @@ const projects = () => {
                           link: index.link,
                           codelink: index.codelink,
                           tech: index.tech,
+                          imagen: index.imagen,
                         });
                         openModal();
                       }}

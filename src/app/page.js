@@ -70,11 +70,24 @@ export default function Home() {
 
             <div className="flex gap-4 ">
               <div className="bg-[#2B2B2C] text-[#FFFFFF] md:p-2 p-1 mb-4 mt-1  rounded-lg text-center overflow-hidden  text-sm ">
-                <LuStickyNote className="inline-block text-2xl text-[#FEC664]" />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrerk"
+                  href="https://drive.google.com/file/d/1Qi8ViwixJmF1HI6qpgQgZs61DbJ1cU6o/view?usp=sharing"
+                >
+                  <LuStickyNote className="inline-block text-2xl text-[#FEC664]" />
+                </a>
               </div>
               <div className="flex flex-col gap-1">
                 <div className="text-[#959595] text-sm my-2 cursor-pointer">
-                  <a href=""> RESUME </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrerk"
+                    href="https://drive.google.com/file/d/1Qi8ViwixJmF1HI6qpgQgZs61DbJ1cU6o/view?usp=sharing"
+                  >
+                    {" "}
+                    RESUME{" "}
+                  </a>
                 </div>
               </div>
             </div>
@@ -91,20 +104,34 @@ export default function Home() {
             } md:flex ease-in duration-300 flex justify-center items-center mx-6 mt-4 gap-6`}
           >
             <div className="bg-[#2B2B2C] text-[#FFFFFF] md:p-2 p-1 mb-4 mt-1 cursor-pointer rounded-full text-center overflow-hidden  text-sm ">
-              <a href="https://github.com/Rohitpatil-123">
+              <a
+                target="_blank"
+                rel="noopener noreferrerk"
+                href="https://github.com/Rohitpatil-123"
+              >
                 {" "}
                 <LuGithub className="inline-block text-2xl text-[#9F9F9F]" />{" "}
               </a>
             </div>
 
             <div className="bg-[#2B2B2C] text-[#FFFFFF] md:p-2 p-1 mb-4 mt-1  rounded-full text-center overflow-hidden  text-sm ">
-              <a href="https://leetcode.com/rohittt_45/">
+              <a
+                target="_blank"
+                rel="noopener noreferrerk"
+                href="https://leetcode.com/rohittt_45/"
+              >
                 <FaCode className="inline-block text-2xl text-[#9F9F9F]" />
               </a>
             </div>
 
             <div className="bg-[#2B2B2C] text-[#FFFFFF] md:p-2 p-1 mb-4 mt-1  rounded-full text-center overflow-hidden  text-sm ">
-              <FaLinkedinIn className="inline-block text-2xl text-[#9F9F9F]" />
+              <a
+                target="_blank"
+                rel="noopener noreferrerk"
+                href="https://www.linkedin.com/in/rohit-patil-98b920228/"
+              >
+                <FaLinkedinIn className="inline-block text-2xl text-[#9F9F9F]" />
+              </a>
             </div>
           </div>
           <div className="absolute top-0 right-0 md:invisible bg-[#2B2B2C] text-[#FFFFFF] px-3   rounded-bl-2xl text-center text-sm ">
@@ -119,7 +146,9 @@ export default function Home() {
         <div className="w-full md:w-9/12 bg-[#1E1E1F] md:relative  overflow-hidden  border-[1px] rounded-3xl border-[#383838] md:ml-[26%] md:right-0">
           <div className="md:flex hidden md:gap-8  md:absolute md:right-0 md:bg-[#2B2B2C]  py-5 md:px-6 md:rounded-bl-3xl md:border-l-2 border-[#383838] ">
             <div
-              className="text-[#D6D6D6] tracking-wide font-[600] cursor-pointer"
+              className={`tracking-wide font-[600] cursor-pointer ${
+                comp == "about" ? "text-[#FDC764]" : "text-[#D6D6D6]"
+              }`}
               onClick={() => {
                 setComp("about");
               }}
@@ -127,7 +156,9 @@ export default function Home() {
               About
             </div>
             <div
-              className="text-[#D6D6D6]  tracking-wide font-[600] cursor-pointer"
+              className={`tracking-wide font-[600] cursor-pointer ${
+                comp == "experience" ? "text-[#FDC764]" : "text-[#D6D6D6]"
+              }`}
               onClick={() => {
                 setComp("experience");
               }}
@@ -135,7 +166,9 @@ export default function Home() {
               Experience
             </div>
             <div
-              className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer"
+              className={`tracking-wide font-[600] cursor-pointer ${
+                comp == "projects" ? "text-[#FDC764]" : "text-[#D6D6D6]"
+              }`}
               onClick={() => {
                 setComp("projects");
               }}
@@ -143,7 +176,9 @@ export default function Home() {
               projects
             </div>
             <div
-              className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer"
+              className={`tracking-wide font-[600] cursor-pointer ${
+                comp == "skills" ? "text-[#FDC764]" : "text-[#D6D6D6]"
+              }`}
               onClick={() => {
                 setComp("skills");
               }}
@@ -151,7 +186,9 @@ export default function Home() {
               Skills
             </div>
             <div
-              className="text-[#D6D6D6] tracking-wide  font-[600] cursor-pointer"
+              className={`tracking-wide font-[600] cursor-pointer ${
+                comp == "contact" ? "text-[#FDC764]" : "text-[#D6D6D6]"
+              }`}
               onClick={() => setComp("contact")}
             >
               Contact Me
