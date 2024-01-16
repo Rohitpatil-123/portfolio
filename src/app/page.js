@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const [show, setShow] = useState(false);
-  const [comp, setComp] = useState("");
+  const [comp, setComp] = useState("about");
   return (
     <div className="w-full flex justify-center items-center">
       <div className=" w-full my-4 mx-6 md:my-12 md:w-9/12 flex flex-col md:flex-row gap-4">
