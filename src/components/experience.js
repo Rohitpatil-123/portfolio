@@ -5,17 +5,18 @@ import Image from "next/image";
 import Acm from "../media/acmlog.png";
 import Str from "../media/strugendl.png";
 import Laq from "../media/laqshy.png";
+import Zen from "../media/zentechp.png";
 
 const experience = () => {
   const data = [
     {
       id: 1,
-      logo: Acm,
-      company: "ACM Club",
-      role: "Frontend Developer Intern",
-      duration: "August 2023 - Present",
+      logo: Zen,
+      company: "Zentech Systems",
+      role: "Full Stack Developer Intern",
+      duration: "December 2023 - Present",
       description:
-        "Contributing to the development of the official landing page for the ACM club of MHSSCE. Developing components to address various UI requirements.",
+        "Contributing to the development of the company’s projects using MERN stack.",
     },
     {
       id: 2,
