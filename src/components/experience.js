@@ -14,9 +14,9 @@ const experience = () => {
       logo: Zen,
       company: "Zentech Systems",
       role: "Full Stack Developer Intern",
-      duration: "December 2023 - Present",
+      duration: "December 2023",
       description:
-        "Contributing to the development of the company’s projects using MERN stack.",
+        "developed client's project which used to provide platform for appointment booking. i have worked on nextjs, tailwindcss.",
     },
     {
       id: 2,
