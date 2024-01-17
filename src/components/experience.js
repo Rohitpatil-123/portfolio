@@ -63,7 +63,7 @@ const experience = () => {
             <HiOutlineBookOpen className="inline-block text-2xl text-[#FDC764] " />
             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
           </span>
-          <h3 class="mb-1 text-2xl font-semibold text-gray-900 dark:text-white">
+          <h3 class="mb-1 text-2xl font-semibold text-[#F8F8F8] ">
             Experience
           </h3>
         </li>
@@ -74,7 +74,7 @@ const experience = () => {
                 <Image src={item.logo} alt="Acm" width={50} height={40} />
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
               </span>
-              <h3 class="mb-1 text-md font-semibold text-gray-900 dark:text-white">
+              <h3 class="mb-1 text-md font-semibold text-[#F8F8F8]">
                 {item.company}
               </h3>
               <time class="block mb-2 text-sm font-normal  text-[#FDC764]">
@@ -100,16 +100,14 @@ const experience = () => {
             <HiOutlineBookOpen className="inline-block text-2xl text-[#FDC764] " />
             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
           </span>
-          <h3 class="mb-1 text-2xl font-semibold text-gray-900 dark:text-white">
-            Education
-          </h3>
+          <h3 class="mb-1 text-2xl font-semibold text-[#F8F8F8]">Education</h3>
         </li>
 
         <li class="mb-6 ms-6">
           <span class="absolute flex items-center justify-center bg-[#FDC764] w-2 h-2  rounded-full -start-1 mt-2 ring-8 ring-white dark:ring-[#383838] ">
             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
           </span>
-          <h3 class="mb-1 text-md font-semibold text-gray-900 dark:text-white">
+          <h3 class="mb-1 text-md font-semibold text-[#F8F8F8]">
             Bachelor of Engineering (BE) in Information Technology
           </h3>
           <time class="block mb-2 text-sm font-normal leading-none text-[#FDC764]">
