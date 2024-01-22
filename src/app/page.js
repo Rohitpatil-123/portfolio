@@ -8,6 +8,7 @@ import { FaCode } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import Rohit from "../media/rohit.png";
+import Rp from "../media/rppht.png";
 import { useState } from "react";
 import About from "../components/about";
 import Experience from "../components/experience";
@@ -24,8 +25,16 @@ export default function Home() {
       <div className=" w-full my-4 mx-6 md:my-12 md:w-9/12 flex flex-col md:flex-row gap-4">
         <div className="w-full h-fit md:w-[18%] bg-[#1E1E1F]  border-[1px] rounded-3xl border-[#383838] relative md:fixed overflow-hidden">
           <div className="my-2 mx-4  flex md:gap-2 gap-4 md:flex-col md:justify-center md:items-center">
-            <div className="bg-[#383839] w-20 h-20 md:w-36 md:h-36 rounded-3xl overflow-hidden my-auto md:mt-10">
-              <Image src={Rohit} alt="Rohit" />
+            <div className="bg-[#383839] w-20 h-20 md:w-36 px-2  md:h-36 rounded-3xl overflow-hidden my-auto md:mt-10">
+              <Image
+                src={Rp}
+                alt="Rohit"
+                style={{
+                  height: "120%",
+
+                  width: "100%",
+                }}
+              />
             </div>
             <div className="flex flex-col justify-center md:items-center ">
               <div className="md:text-2xl text-xl tracking-wide md:mt-4 mt-3 text-[#FAFAFA] font-bold">
