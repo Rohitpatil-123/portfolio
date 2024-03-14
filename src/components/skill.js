@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Aws1 from "../media/aws1.png";
+import Java from "../media/java.png";
+import Aws2 from "../media/aws2.png";
+import Image from "next/image";
 
 const skill = () => {
   const frontend = [
@@ -121,8 +125,67 @@ const skill = () => {
       <div className="text-2xl text-white mt-4 mx-2 font-[600] tracking-wide">
         Certifications
       </div>
-      <div className="flex ml-2 text-[#D6D6D6] mt-2 mb-8">
-        <ul className="flex flex-col gap-2">
+      <div className="flex w-[100%] flex-wrap ml-2 mt-4 gap-2 text-[#D6D6D6] mb-8 ">
+        <div className="flex w-[49%] text-wrap gap-4 ">
+          <Image src={Aws1} alt="java" width={50} height={50} />
+          <a
+            target="_blank"
+            rel="noopener noreferrerk"
+            className="hover:underline my-auto"
+            href="https://drive.google.com/file/d/1JtlWsbRiy9ZKopWT-3YdVHxe6Zv-mGbO/view?usp=sharing"
+          >
+            AWS Academy Introduction to Cloud Semester 1
+          </a>
+        </div>
+        <div className="flex w-[49%] text-wrap gap-4 ">
+          <Image src={Java} alt="java" width={50} height={80} />
+          <a
+            target="_blank"
+            rel="noopener noreferrerk"
+            className="hover:underline my-auto"
+            href="https://drive.google.com/file/d/1ZIS_bbIdI_sMQdtYhqTpglUN8Mm7NDo5/view?usp=sharing"
+          >
+            Java Development
+          </a>
+        </div>
+        <div className="flex w-[49%] text-wrap gap-4 mt-3">
+          <Image src={Aws2} alt="java" width={50} height={50} />
+          <a
+            target="_blank"
+            rel="noopener noreferrerk"
+            className="hover:underline my-auto"
+            href="https://drive.google.com/file/d/13obz-sWHRr1D_MbRWWPsxQGfkj58YT_f/view?usp=sharing"
+          >
+            AWS Academy Machine Learning Foundations
+          </a>
+        </div>
+      </div>
+      {/* <div className="flex gap-4 flex-wrap w-[100%] border-2 ml-2 text-[#D6D6D6] mt-2 mb-8">
+        <div classname="flex flex-row w-[50%]"> */}
+      {/* <Image src={Aws1} alt="java" width={50} height={50} /> */}
+      {/* <div className="text-[#FDC764]">cbdbchsjdc</div>
+          <div className="text-[#FDC764]">cbdbchsjdc</div> */}
+      {/* <a
+            target="_blank"
+            rel="noopener noreferrerk"
+            href="https://drive.google.com/file/d/1ZIS_bbIdI_sMQdtYhqTpglUN8Mm7NDo5/view?usp=sharing"
+          >
+            java Development
+          </a> */}
+      {/* </div> */}
+      {/* <div classname="flex w-[50%] ">
+          <Image src={Aws1} alt="java" width={50} height={50} />
+          <a href="https://drive.google.com/file/d/13obz-sWHRr1D_MbRWWPsxQGfkj58YT_f/view?usp=sharing">
+            AWS Academy Machine Learning Foundations
+          </a>
+        </div>
+        <div classname="flex">
+          <Image src={Aws1} alt="java" width={50} height={50} />
+          <a href="https://drive.google.com/file/d/13obz-sWHRr1D_MbRWWPsxQGfkj58YT_f/view?usp=sharing">
+            AWS Academy Introduction to Cloud Semester 1
+          </a>
+        </div> */}
+      {/* <ul className="flex flex-col gap-2">
           <li>
             <a
               target="_blank"
@@ -137,8 +200,8 @@ const skill = () => {
               AWS Academy Machine Learning Foundations
             </a>
           </li>
-        </ul>
-      </div>
+        </ul> */}
+      {/* </div> */}
     </motion.div>
   );
 };

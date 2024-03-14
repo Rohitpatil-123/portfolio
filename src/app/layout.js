@@ -8,6 +8,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Rohit-Portfolio",
   description: "software engineer",
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        href: "/favicon.ico",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

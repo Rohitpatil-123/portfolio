@@ -16,7 +16,7 @@ const experience = () => {
       role: "Full Stack Developer Intern",
       duration: "December 2023",
       description:
-        "developed client's project which used to provide platform for appointment booking. i have worked on nextjs, tailwindcss.",
+        "Collaborated in a 4-member team at ZenTech Systems, leading backend API development.Contributed to frontend UI enhancements and seamless API integrations.Key role in designing and planning the initial system.",
     },
     {
       id: 2,

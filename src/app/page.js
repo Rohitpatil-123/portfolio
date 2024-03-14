@@ -16,6 +16,7 @@ import Projects from "../components/projects";
 import Skills from "../components/skill";
 import Contact from "../components/contact";
 import { motion } from "framer-motion";
+import { FiLink } from "react-icons/fi";
 
 export default function Home() {
   const [show, setShow] = useState(false);
@@ -31,7 +32,6 @@ export default function Home() {
                 alt="Rohit"
                 style={{
                   height: "120%",
-
                   width: "100%",
                 }}
               />
@@ -88,13 +88,14 @@ export default function Home() {
                 </a>
               </div>
               <div className="flex flex-col gap-1">
-                <div className="text-[#959595] text-sm my-2 cursor-pointer">
+                <div className="text-[#959595] text-sm my-2 cursor-pointer underline ">
                   <a
                     target="_blank"
                     rel="noopener noreferrerk"
                     href="https://drive.google.com/file/d/1Qi8ViwixJmF1HI6qpgQgZs61DbJ1cU6o/view?usp=sharing"
                   >
                     {" "}
+                    {/* <FiLink className="inline-block text-xl mr-2 text-[#959595]" /> */}
                     RESUME{" "}
                   </a>
                 </div>
