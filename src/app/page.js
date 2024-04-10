@@ -92,7 +92,7 @@ export default function Home() {
                   <a
                     target="_blank"
                     rel="noopener noreferrerk"
-                    href="https://drive.google.com/file/d/1Qi8ViwixJmF1HI6qpgQgZs61DbJ1cU6o/view?usp=sharing"
+                    href="https://drive.google.com/file/d/10Kunj51Esy4nHDWfbyYX3UlFhBsQ5u0G/view?usp=sharing"
                   >
                     {" "}
                     {/* <FiLink className="inline-block text-xl mr-2 text-[#959595]" /> */}

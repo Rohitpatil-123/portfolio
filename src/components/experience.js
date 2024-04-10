@@ -14,7 +14,7 @@ const experience = () => {
       logo: Zen,
       company: "Zentech Systems",
       role: "Full Stack Developer Intern",
-      duration: "December 2023",
+      duration: "January 2024",
       description:
         "Collaborated in a 4-member team at ZenTech Systems, leading backend API development.Contributed to frontend UI enhancements and seamless API integrations.Key role in designing and planning the initial system.",
     },
